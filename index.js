@@ -69,11 +69,22 @@ function playRound(playerSelection, computerSelection) {
 
 console.log(playRound(playerSelection,computerSelection))
 
-function game(){
+function game(playRound) {
+    playRound(playerSelection,computerSelection)
+    console.log()
+    playRound(playerSelection,computerSelection)
+    console.log()
+    playRound(playerSelection,computerSelection)
+    console.log()
+    playRound(playerSelection,computerSelection)
+    console.log()
+    playRound(playerSelection,computerSelection)
+}
+
 
     // keep score of wins + losses
     // loop functions??
-}
+// }
 
 // play 5 rounds 
 
