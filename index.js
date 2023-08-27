@@ -1,6 +1,5 @@
 // Computer
-let cpuChoice = ["rock","paper","scissors"]
-
+let cpuChoice = ["rock","paper","scissors"];
 
 function getComputerChoice(cpuChoice) {
     
@@ -8,19 +7,67 @@ function getComputerChoice(cpuChoice) {
     
 
 }
-console.log(getComputerChoice(cpuChoice));
+// console.log(getComputerChoice(cpuChoice));
+
+
+// let computerSelection = getComputerChoice(cpuChoice);
+
 
 // player
-function getPlayerChoice(){
-    prompt ("rock,paper,scissors","")
+let playerChoice = prompt ("rock,paper,scissors")
+
+function getPlayerChoice(playerChoice){
+    return playerChoice
 }
 
-
+// console.log (playerChoice)
 
 // game
+let computerSelection = getComputerChoice(cpuChoice);
+let playerSelection = getPlayerChoice(playerChoice);
+
+
 function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection)
+    {
+        console.log("draw")
+    }
+    else if (playerSelection === "rock", computerSelection === "scissors" )
+    {
+        console.log("You Win! Rock beats Scissors")
+    }
+    else if (playerSelection === "paper", computerSelection === "rock") 
+    {
+        console.log("You Win! Paper beats Rock")
+    } 
+
+    else if(playerSelection === "scissors", computerSelection === "paper")
+    {
+        console.log("You Win! Scissors beats Paper")
+    }
+
+    else if (playerSelection === "rock", computerSelection === "paper" )
+    {
+        console.log("You lose! Paper beats Rock")
+    }
+    else if (playerSelection === "paper", computerSelection === "scissors") 
+    {
+        console.log("You Lose! Scissors beats Paper")
+    } 
+
+    else (playerSelection === "scissors", computerSelection === "rock") 
+    {
+        console.log("You Lose! Rock beats Scissors")
+    }
+
+
+
+
+    // return playerSelection, computerSelection;
 
 }
+
+console.log(playRound(playerSelection,computerSelection))
 
 function game(){
 
