@@ -1,12 +1,23 @@
-function getComputerChoice() {
+// Computer
+let cpuChoice = ["rock","paper","scissors"]
+
+
+function getComputerChoice(cpuChoice) {
+    
+    return cpuChoice [Math.floor(Math.random()*cpuChoice.length)]
+    
 
 }
+console.log(getComputerChoice(cpuChoice));
 
+// player
 function getPlayerChoice(){
     prompt ("rock,paper,scissors","")
 }
-// prompt from user
 
+
+
+// game
 function playRound(playerSelection, computerSelection) {
 
 }
@@ -20,7 +31,12 @@ function game(){
 // play 5 rounds 
 
 
-
+// get computer choice
+// get play input
+// combined both choices into one function
+// defined winning conditions
+// repeat for 5 rounds
+// 
 
 
 
