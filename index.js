@@ -14,9 +14,10 @@ function getComputerChoice(cpuChoice) {
 
 
 // player
-let playerChoice = prompt ("rock,paper,scissors")
 
-function getPlayerChoice(playerChoice){
+
+function getPlayerChoice(){
+    let playerChoice = prompt ("rock,paper,scissors");
     return playerChoice
 }
 
