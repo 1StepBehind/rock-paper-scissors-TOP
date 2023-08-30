@@ -1,7 +1,8 @@
 // Computer
-let cpuChoice = ["rock","paper","scissors"];
 
-function getComputerChoice(cpuChoice) {
+
+function getComputerChoice() {
+    let cpuChoice = ["rock","paper","scissors"];
     
     return cpuChoice [Math.floor(Math.random()*cpuChoice.length)]
     
@@ -24,11 +25,13 @@ function getPlayerChoice(){
 // console.log (playerChoice)
 
 // game
-let computerSelection = getComputerChoice(cpuChoice);
-let playerSelection = getPlayerChoice(playerChoice);
+let computerSelection = getComputerChoice();
+let playerSelection = getPlayerChoice();
 
 
-function playRound(playerSelection, computerSelection) {
+function playRound() {
+    getPlayerChoice();
+    getComputerChoice();
     if (playerSelection === computerSelection)
     {
         console.log("draw")
@@ -68,21 +71,20 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-console.log(playRound(playerSelection,computerSelection))
 
-function game(playRound) {
-    playRound(playerSelection,computerSelection)
-    console.log()
-    playRound(playerSelection,computerSelection)
-    console.log()
-    playRound(playerSelection,computerSelection)
-    console.log()
-    playRound(playerSelection,computerSelection)
-    console.log()
-    playRound(playerSelection,computerSelection)
+function game() {
+    console.log(playRound());
+    
+    console.log(playRound()) ;
+    // console.log()
+    console.log(playRound()) ;
+    // console.log()
+    console.log(playRound()) ;
+    // console.log()
+    console.log(playRound()) ;
 }
 
-
+console.log(game())
     // keep score of wins + losses
     // loop functions??
 // }
