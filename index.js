@@ -8,11 +8,7 @@ function getComputerChoice() {
     
 
 }
-// console.log(getComputerChoice(cpuChoice));
-
-
-// let computerSelection = getComputerChoice(cpuChoice);
-
+// console.log(getComputerChoice());
 
 // player
 
@@ -22,16 +18,20 @@ function getPlayerChoice(){
     return playerChoice
 }
 
-// console.log (playerChoice)
+// console.log (getPlayerChoice())
 
 // game
 let computerSelection = getComputerChoice();
 let playerSelection = getPlayerChoice();
 
 
-function playRound() {
-    getPlayerChoice();
-    getComputerChoice();
+function playRound(playerSelection,computerSelection) {
+    // getPlayerChoice();
+    // getComputerChoice();
+    // let computerSelection = getComputerChoice();
+    // let playerSelection = getPlayerChoice();
+
+
     if (playerSelection === computerSelection)
     {
         console.log("draw")
@@ -67,21 +67,22 @@ function playRound() {
 
 
 
-    return playerSelection, computerSelection;
+    // return playerSelection, computerSelection;
 
 }
 
 
 function game() {
-    console.log(playRound());
+   console.log(getComputerChoice());
+   console.log(getPlayerChoice());
+   playRound();
+   console.log(getComputerChoice());
+   console.log(getPlayerChoice());
+   playRound();
+   console.log(getComputerChoice());
+   console.log(getPlayerChoice());
+   playRound();
     
-    console.log(playRound()) ;
-    // console.log()
-    console.log(playRound()) ;
-    // console.log()
-    console.log(playRound()) ;
-    // console.log()
-    console.log(playRound()) ;
 }
 
 console.log(game())
