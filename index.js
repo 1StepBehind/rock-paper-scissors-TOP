@@ -4,65 +4,54 @@
 function getComputerChoice() {
     let cpuChoice = ["rock","paper","scissors"];
     
-    return cpuChoice [Math.floor(Math.random()*cpuChoice.length)]
+    return  console.log( cpuChoice [Math.floor(Math.random()*cpuChoice.length)]);
     
+    }
 
-}
-// console.log(getComputerChoice());
 
 // player
 
-
 function getPlayerChoice(){
     let playerChoice = prompt ("rock,paper,scissors");
-    return playerChoice
+    return console.log(playerChoice)
 }
 
-// console.log (getPlayerChoice())
 
-// game
-let computerSelection = getComputerChoice();
-let playerSelection = getPlayerChoice();
 
 
 function playRound(playerSelection,computerSelection) {
-    // getPlayerChoice();
-    // getComputerChoice();
-    // let computerSelection = getComputerChoice();
-    // let playerSelection = getPlayerChoice();
-
-
-    if (playerSelection === computerSelection)
-    {
-        console.log("draw")
-    }
-    else if (playerSelection == "rock" && computerSelection == "scissors" )
-    {
-        console.log("You Win! Rock beats Scissors")
-    }
+   
+     if (playerSelection == "rock" && computerSelection == "scissors" )
+    
+     {console.log("You Win! Rock beats Scissors");
+}    
     else if (playerSelection == "paper" && computerSelection == "rock") 
-    {
-        console.log("You Win! Paper beats Rock")
-    } 
+    
+     {console.log("You Win! Paper beats Rock");
+   }  
 
     else if(playerSelection == "scissors" && computerSelection == "paper")
-    {
-        console.log("You Win! Scissors beats Paper")
-    }
+    
+     {console.log("You Win! Scissors beats Paper");}
+    
 
     else if (playerSelection == "rock" && computerSelection == "paper" )
-    {
-        console.log("You lose! Paper beats Rock")
-    }
+    
+     {console.log("You lose! Paper beats Rock");
+  }  
     else if (playerSelection == "paper" && computerSelection == "scissors") 
-    {
-        console.log("You Lose! Scissors beats Paper")
-    } 
+    
+     {console.log("You Lose! Scissors beats Paper")};
+    
 
-    else if (playerSelection == "scissors" && computerSelection == "rock") 
-    {
-        console.log("You Lose! Rock beats Scissors")
+    else if  (playerSelection == "scissors" && computerSelection == "rock") 
+    
+     {{console.log("You Lose! Rock beats Scissors")}}
+
+    else {
+        console.log("draw")
     }
+    
 
 
 
@@ -73,19 +62,16 @@ function playRound(playerSelection,computerSelection) {
 
 
 function game() {
-   console.log(getComputerChoice());
-   console.log(getPlayerChoice());
-   playRound();
-   console.log(getComputerChoice());
-   console.log(getPlayerChoice());
-   playRound();
-   console.log(getComputerChoice());
-   console.log(getPlayerChoice());
-   playRound();
-    
+   
+   
+   playRound(getPlayerChoice(),getComputerChoice());
+   
+   playRound(getPlayerChoice(),getComputerChoice());
+   
+   playRound(getPlayerChoice(),getComputerChoice());    
 }
 
-console.log(game())
+game()
     // keep score of wins + losses
     // loop functions??
 // }
