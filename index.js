@@ -12,7 +12,7 @@ function getComputerChoice() {
 // player
 
 function getPlayerChoice(){
-    let playerChoice = prompt ("rock,paper,scissors");
+    let playerChoice = prompt ("rock,paper,scissors").toLowerCase();
     return playerChoice
 }
 
