@@ -4,7 +4,7 @@
 function getComputerChoice() {
     let cpuChoice = ["rock","paper","scissors"];
     
-    return  console.log( cpuChoice [Math.floor(Math.random()*cpuChoice.length)]);
+    return cpuChoice [Math.floor(Math.random()*cpuChoice.length)];
     
     }
 
@@ -13,43 +13,43 @@ function getComputerChoice() {
 
 function getPlayerChoice(){
     let playerChoice = prompt ("rock,paper,scissors");
-    return console.log(playerChoice)
+    return playerChoice
 }
 
-
+// const playerSelection = getPlayerChoice()
+// const computerSelection = getComputerChoice()
 
 
 function playRound(playerSelection,computerSelection) {
    
      if (playerSelection == "rock" && computerSelection == "scissors" )
     
-     {console.log("You Win! Rock beats Scissors");
-}    
+     return "You Win! Rock beats Scissors"
+    
     else if (playerSelection == "paper" && computerSelection == "rock") 
     
-     {console.log("You Win! Paper beats Rock");
-   }  
+     return "You Win! Paper beats Rock"
 
     else if(playerSelection == "scissors" && computerSelection == "paper")
     
-     {console.log("You Win! Scissors beats Paper");}
+     return "You Win! Scissors beats Paper"
     
 
     else if (playerSelection == "rock" && computerSelection == "paper" )
     
-     {console.log("You lose! Paper beats Rock");
-  }  
+     return "You lose! Paper beats Rock"
+ 
     else if (playerSelection == "paper" && computerSelection == "scissors") 
     
-     {console.log("You Lose! Scissors beats Paper")};
+     return "You Lose! Scissors beats Paper"
     
 
     else if  (playerSelection == "scissors" && computerSelection == "rock") 
     
-     {{console.log("You Lose! Rock beats Scissors")}}
-
-    else {
-        console.log("draw")
+     return "You Lose! Rock beats Scissors"
+   
+     else  (playerSelection === computerSelection)
+        return "draw"
     }
     
 
@@ -58,18 +58,18 @@ function playRound(playerSelection,computerSelection) {
 
     // return playerSelection, computerSelection;
 
-}
 
 
-function game() {
-   
-   
-   playRound(getPlayerChoice(),getComputerChoice());
-   
-   playRound(getPlayerChoice(),getComputerChoice());
-   
-   playRound(getPlayerChoice(),getComputerChoice());    
-}
+
+
+ function game() {
+        for (let i = 0; i < 3; i++) {
+            let playerChoice = getPlayerChoice();
+            let computerChoice = getComputerChoice();
+            let result = playRound(playerChoice, computerChoice);
+            console.log(`Round ${i + 1}: Player chose ${playerChoice}, Computer chose ${computerChoice}. Result: ${result}`);
+        }
+    }
 
 game()
     // keep score of wins + losses
@@ -88,7 +88,13 @@ game()
 
 
 
-
+// function game() {
+//     for (let i = 0; i < 3; i++) {
+//         let playerChoice = getPlayerChoice();
+//         let computerChoice = getComputerChoice();
+//         let result = playRound(playerChoice, computerChoice);
+//         console.log(`Round ${i + 1}: Player chose ${playerChoice}, Computer chose ${computerChoice}. Result: ${result}`);
+    // }
 
 
 
