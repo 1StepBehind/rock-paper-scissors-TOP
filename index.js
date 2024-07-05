@@ -16,8 +16,7 @@ function getPlayerChoice(){
     return playerChoice
 }
 
-// const playerSelection = getPlayerChoice()
-// const computerSelection = getComputerChoice()
+
 
 
 function playRound(playerSelection,computerSelection) {
@@ -56,45 +55,22 @@ function playRound(playerSelection,computerSelection) {
 
 
 
-    // return playerSelection, computerSelection;
+   
 
 
 
+// REMOVED FIRST STEP TOO ui CHANGE
 
+//  function game() {
+//         for (let i = 0; i < 3; i++) {
+//             let playerChoice = getPlayerChoice();
+//             let computerChoice = getComputerChoice();
+//             let result = playRound(playerChoice, computerChoice);
+//             console.log(`Round ${i + 1}: Player chose ${playerChoice}, Computer chose ${computerChoice}. Result: ${result}`);
+//         }
+//     }
 
- function game() {
-        for (let i = 0; i < 3; i++) {
-            let playerChoice = getPlayerChoice();
-            let computerChoice = getComputerChoice();
-            let result = playRound(playerChoice, computerChoice);
-            console.log(`Round ${i + 1}: Player chose ${playerChoice}, Computer chose ${computerChoice}. Result: ${result}`);
-        }
-    }
-
-game()
-    // keep score of wins + losses
-    // loop functions??
-// }
-
-// play 5 rounds 
-
-
-// get computer choice
-// get play input
-// combined both choices into one function
-// defined winning conditions
-// repeat for 5 rounds
-// 
-
-
-
-// function game() {
-//     for (let i = 0; i < 3; i++) {
-//         let playerChoice = getPlayerChoice();
-//         let computerChoice = getComputerChoice();
-//         let result = playRound(playerChoice, computerChoice);
-//         console.log(`Round ${i + 1}: Player chose ${playerChoice}, Computer chose ${computerChoice}. Result: ${result}`);
-    // }
+// game()
 
 
 
@@ -106,13 +82,4 @@ game()
 
 
 
-
-
-// "You Lose! Paper beats Rock"
-// "You Lose! Rock beats Scissors"
-// "You Lose! Scissors beats Paper"
-// "You Win! Paper beats Rock"
-// "You Win! Rock beats Scissors"
-// "You Win! Scissors beats Paper"
-// refer back to problem solving model
 
