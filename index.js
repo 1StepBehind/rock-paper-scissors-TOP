@@ -88,7 +88,11 @@ function playRound(playerSelection,computerSelection) {
 
 
 
+// change players choice to take an button input 
+// create a results output wit for loop 
 
+// declare winner keep track of score 
+// display play and PC score 
 
 
 
