@@ -1,21 +1,35 @@
 // Computer
 
+const btns = document.querySelectorAll;("#btn");
+
+const buttons = document.querySelectorAll("#btn")
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    console.log(playRound())
+  })
+});
+
+// btns.forEach((button)) {}
+// addEventListener("click",() => {
+//     alert("hello");
+// });
+
+
 
 function getComputerChoice() {
     let cpuChoice = ["rock","paper","scissors"];
     
     return cpuChoice [Math.floor(Math.random()*cpuChoice.length)];
     
-    }
+    };
 
 
-// player
+// player change to add onclick fuction to button 
 
 function getPlayerChoice(){
     let playerChoice = prompt ("rock,paper,scissors").toLowerCase();
     return playerChoice
-}
-
+};
 
 
 
