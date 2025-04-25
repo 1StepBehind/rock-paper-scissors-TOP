@@ -5,8 +5,10 @@ const btns = document.querySelectorAll;("#btn");
 const buttons = document.querySelectorAll("#btn")
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    console.log(playRound())
-  })
+    console.log(playRound(button.value, getComputerChoice()));
+    
+  });
+  
 });
 
 // btns.forEach((button)) {}
@@ -26,11 +28,11 @@ function getComputerChoice() {
 
 // player change to add onclick fuction to button 
 
-function getPlayerChoice(){
-    let playerChoice = prompt ("rock,paper,scissors").toLowerCase();
-    return playerChoice
-};
-
+// function getPlayerChoice(){
+//     let playerChoice = btns;
+//     return playerChoice
+// };
+// // 
 
 
 function playRound(playerSelection,computerSelection) {
