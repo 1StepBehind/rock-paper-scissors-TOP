@@ -1,11 +1,19 @@
 // Computer
+let newResults =[];
+
+// const result = document.getElementById("result");
+
+
 
 const btns = document.querySelectorAll;("#btn");
 
 const buttons = document.querySelectorAll("#btn")
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    console.log(playRound(button.value, getComputerChoice()));
+    const roundResult = playRound(button.value, getComputerChoice());
+    newResults.push(roundResult);
+    console.log(roundResult);
+    result.innerHTML = newResults.join('<br>');
     
   });
   
@@ -68,6 +76,22 @@ function playRound(playerSelection,computerSelection) {
     }
     
 
+// adding results
+
+
+
+
+
+
+
+
+
+
+// const content = document.createElement("div");
+// content.classList.add("content");
+// content.textContent = newResults;
+
+// result.appendChild(content);
 
 
 
